@@ -15,8 +15,46 @@ public class MenuController {
         Hogwarts hogwarts = new Hogwarts();
     }
 
-    public void startGame(){
+    public void startGame(DiagonAlley diagonAlley, Hogsmeade hogsmeade, Hogwarts hogwarts){
+        boolean running = true;
+        while (running){
+            showIntro();
 
+            System.out.println("\nWhere do you want to go?");
+            String input = scanner.nextLine();
+            int inputNum;
+
+            try {
+                inputNum = Integer.parseInt(input);
+            } catch (Exception e){
+                System.out.println("Input error. Please enter a number from the list.");
+                continue;
+            }
+
+            switch (inputNum){
+                case 1: //Go to Diagon Alley
+                    diagonAlley.gameIntro();
+                    diagonAlley.gameController();
+                    break;
+
+                case 2: //Go to Hogsmeade
+                    hogsmeade.gameIntro();
+                    hogsmeade.gameController();
+                    break;
+
+                case 3: //Go to Hogwarts
+                    hogwarts.gameIntro();
+                    hogwarts.gameController();
+                    break;
+
+                case 0:
+                    running = false;
+
+                default:
+                    System.out.println("That's not an option. Try a number between 1-3, or 0 to exit the game.");
+            }
+        }
+        scanner.close();
     }
 
     public void showIntro(){
