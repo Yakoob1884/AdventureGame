@@ -1,10 +1,19 @@
 import java.util.List;
+import java.util.Scanner;
 
 public class MenuController {
     //Attributes
     int totalPoints;
     //public List<String> injuries;
+    Scanner scanner;
 
+    //Constructor to initialize data
+    public MenuController(){
+        scanner = new Scanner(System.in);
+        DiagonAlley diagonAlley = new DiagonAlley();
+        Hogsmeade hogsmeade = new Hogsmeade();
+        Hogwarts hogwarts = new Hogwarts();
+    }
 
     public void startGame(){
 
