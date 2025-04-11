@@ -5,7 +5,6 @@ public interface Game {
     void gameIntro(); //Method to introduce the game
 }
 
-
 //DiagonAlley implements the Game interface
 class DiagonAlley implements Game{
 
