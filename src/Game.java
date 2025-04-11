@@ -62,12 +62,19 @@ class Hogwarts implements Game{
 
     @Override
     public void gameController(){
-
+        RockPaperScissor rockPS = new RockPaperScissor();
+        rockPS.rockPaperScissor();
     }
 
     @Override
     public void gameIntro(){
-
+        System.out.println("\tHogwarts was quiet. Too quiet.");
+        System.out.println("Harry found himself descending into forgotten dungeons, guided only by torchlight and echoing footsteps.");
+        System.out.println("At the center of a circular chamber stood a troll, enormous and… oddly philosophical.");
+        System.out.println("\n“We play a game,” it rumbled. “Magical rock-paper-scissors. You win, you pass. You lose, you limp.”");
+        System.out.println("\nIts club thudded to the floor, shaking the stone beneath them.");
+        System.out.println("\n The troll grinned. “Choose wisely.”");
+        System.out.println("  The final trial begins.");
     }
 
     @Override
