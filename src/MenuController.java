@@ -34,17 +34,17 @@ public class MenuController {
             switch (inputNum){
                 case 1: //Go to Diagon Alley
                     diagonAlley.gameIntro();
-                    diagonAlley.gameController();
+                    diagonAlley.gameController(scanner);
                     break;
 
                 case 2: //Go to Hogsmeade
                     hogsmeade.gameIntro();
-                    hogsmeade.gameController();
+                    hogsmeade.gameController(scanner);
                     break;
 
                 case 3: //Go to Hogwarts
                     hogwarts.gameIntro();
-                    hogwarts.gameController();
+                    hogwarts.gameController(scanner);
                     break;
 
                 case 0:
