@@ -7,7 +7,7 @@ public class RockPaperScissor {
         this.rps = rps.toLowerCase();
     }
 
-    public RockPaperScissor(){
+    public RockPaperScissor() {
 
     }
 
@@ -16,17 +16,17 @@ public class RockPaperScissor {
 
 
     //Compare HarryPotter to Troll
-    public int compareTo(RockPaperScissor troll){
-        if(this.rps.equals(troll.rps)){
+    public int compareTo(RockPaperScissor troll) {
+        if (this.rps.equals(troll.rps)) {
             return 0; //It's a tie
         }
-        if (this.rps.equals("rock") && troll.rps.equals("scissor")){
+        if (this.rps.equals("rock") && troll.rps.equals("scissor")) {
             return 1; //rock > scissor
         }
-        if (this.rps.equals("scissor") && troll.rps.equals("paper")){
+        if (this.rps.equals("scissor") && troll.rps.equals("paper")) {
             return 1; //scissor > paper
         }
-        if (this.rps.equals("paper") && troll.rps.equals("rock")){
+        if (this.rps.equals("paper") && troll.rps.equals("rock")) {
             return 1; //paper > rock
         }
         return -1; //Troll wins
@@ -78,7 +78,7 @@ public class RockPaperScissor {
                 scanner.nextLine();
                 break;
 
-            } else  if (compare == -1){
+            } else if (compare == -1) {
                 System.out.println("The troll won");
                 roundsPlayed++;
             } else {
@@ -86,7 +86,7 @@ public class RockPaperScissor {
 
             }
 
-            if (roundsPlayed == maxRounds){
+            if (roundsPlayed == maxRounds) {
                 System.out.println("\nHarry lost against the troll. Press ENTER to continue.");
                 scanner.nextLine();
             }
